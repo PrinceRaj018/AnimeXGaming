@@ -159,15 +159,11 @@ topBtn.onclick = () => {
 
 const loader = document.getElementById("loader");
 
-window.addEventListener("load", ()=>{
+window.addEventListener("load", () => {
 
-    setTimeout(()=>{
+    loader.classList.add("loader-hide");
 
-        loader.classList.add("loader-hide");
-
-    }, 500);
-
-});
+    });
 
 const counters = document.querySelectorAll(".counter");
 

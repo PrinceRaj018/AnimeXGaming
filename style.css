@@ -2482,7 +2482,7 @@ footer::after{
         #FF2E63
     );
 
-    animation:loading 2s linear forwards;
+    animation:loading 5s linear forwards;
 
 }
 
@@ -3068,24 +3068,24 @@ footer::after{
 
         /*================ MOBILE LOADER =================*/
 
+     .loader-content{
+        transform:scale(.75);
+    }
+
     .loader-content img{
-        width:110px;
-        margin-bottom:20px;
+        width:75px;
+        margin-bottom:15px;
     }
 
     .loader-bar{
-        width:180px;
-        height:5px;
+        width:130px;
+        height:4px;
     }
 
     .loader-content p{
-        font-size:13px;
-        letter-spacing:1px;
-        margin-top:15px;
-    }
-
-    #loader{
-        padding:20px;
+        margin-top:10px;
+        font-size:11px;
+        letter-spacing:.8px;
     }
 
 }
