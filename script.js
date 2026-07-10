@@ -165,7 +165,7 @@ window.addEventListener("load", ()=>{
 
         loader.classList.add("loader-hide");
 
-    },2000);
+    }, 500);
 
 });
 

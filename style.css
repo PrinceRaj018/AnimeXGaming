@@ -2866,6 +2866,25 @@ footer::after{
     nav{
         height:75px;
         padding:0 15px;
+        width:95%;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .logo{
+        padding:8px 10px;
+    }
+
+    .logo img{
+        width:50px;
+        height:50px;
+    }
+
+    .favorite-counter,
+    .search-btn,
+    .menu-btn{
+        width:48px;
+        height:48px;
     }
 
     .logo-text{
@@ -2921,20 +2940,43 @@ footer::after{
         gap:20px;
     }
 
+    /* HERO */
+
+    
+
+    #hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        padding: 110px 20px 60px;
+        gap: 40px;
+    }
+
     .hero-content{
-        padding:30px;
+        width:100%;
+        max-width:100%;
+        padding:30px 22px;
     }
 
     .hero-content h1{
-        font-size:38px;
+        font-size:34px;
+        line-height:1.2;
     }
 
     .hero-content p{
         font-size:16px;
+        line-height:1.8;
+    }
+
+    .hero-tag{
+        font-size:13px;
     }
 
     .hero-buttons{
         flex-direction:column;
+        gap:15px;
     }
 
     .hero-buttons button{
@@ -2942,8 +2984,23 @@ footer::after{
     }
 
     .hero-stats{
-        flex-wrap:wrap;
-        gap:20px;
+        justify-content:center;
+        gap:25px;
+    }
+
+    .hero-image{
+        width:100%;
+        margin:0;
+    }
+
+    .hero-image::before,    
+    .hero-image::after{
+        display:none;
+    }
+
+    .hero-image img{
+        width:85%;
+        max-width:280px;
     }
 
     .anime-container{
@@ -3007,6 +3064,28 @@ footer::after{
 
     grid-template-columns:1fr;
 
+    }
+
+        /*================ MOBILE LOADER =================*/
+
+    .loader-content img{
+        width:110px;
+        margin-bottom:20px;
+    }
+
+    .loader-bar{
+        width:180px;
+        height:5px;
+    }
+
+    .loader-content p{
+        font-size:13px;
+        letter-spacing:1px;
+        margin-top:15px;
+    }
+
+    #loader{
+        padding:20px;
     }
 
 }
@@ -3818,3 +3897,18 @@ a,
 
 }
 
+@media (max-width:480px){
+
+    .loader-content img{
+        width:90px;
+    }
+
+    .loader-bar{
+        width:150px;
+    }
+
+    .loader-content p{
+        font-size:12px;
+    }
+
+}
