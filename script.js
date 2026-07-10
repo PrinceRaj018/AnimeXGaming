@@ -1,8 +1,8 @@
 const sr = ScrollReveal({
 
-    distance: "70px",
-    duration: 1500,
-    delay: 200,
+    distance: "30px",
+    duration: 600,
+    delay: 50,
     reset: false
 
 });
@@ -21,7 +21,7 @@ sr.reveal("#anime h2", {
 
 sr.reveal(".anime-card", {
     origin: "bottom",
-    interval: 150
+    interval: 60
 });
 
 sr.reveal("#games h2", {
@@ -34,7 +34,7 @@ sr.reveal(".featured-game", {
 
 sr.reveal(".game-card", {
     origin: "bottom",
-    interval: 120
+    interval: 100
 });
 
 sr.reveal("#categories h2", {
@@ -43,7 +43,7 @@ sr.reveal("#categories h2", {
 
 sr.reveal(".category-card", {
     origin: "bottom",
-    interval: 100
+    interval: 50
 });
 
 sr.reveal("#trending h2", {
@@ -159,11 +159,15 @@ topBtn.onclick = () => {
 
 const loader = document.getElementById("loader");
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    loader.classList.add("loader-hide");
+    setTimeout(() => {
 
-    });
+        loader.classList.add("loader-hide");
+
+    }, 300);
+
+});
 
 const counters = document.querySelectorAll(".counter");
 

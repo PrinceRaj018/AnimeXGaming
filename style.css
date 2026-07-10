@@ -2482,7 +2482,7 @@ footer::after{
         #FF2E63
     );
 
-    animation:loading 5s linear forwards;
+    animation: loading .5s linear forwards;
 
 }
 
@@ -3899,16 +3899,16 @@ a,
 
 @media (max-width:480px){
 
+    .loader-content{
+        transform:scale(.65);
+    }
+
     .loader-content img{
-        width:90px;
+        width:75px;
     }
 
     .loader-bar{
-        width:150px;
-    }
-
-    .loader-content p{
-        font-size:12px;
+        width:120px;
     }
 
 }
