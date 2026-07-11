@@ -2865,7 +2865,9 @@ footer::after{
 
 /*================ MOBILE =================*/
 
-@media (max-width:768px){
+/* Use the compact navigation and single-column hero on phones and tablets.
+   This prevents the layout changing when a browser uses a wider mobile viewport. */
+@media (max-width:1024px){
 
     nav{
         height:75px;
