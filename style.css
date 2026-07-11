@@ -2698,12 +2698,16 @@ footer::after{
 
     .hero-content{
 
+        width:100%;
         max-width:100%;
+        flex:none;
 
     }
 
     .hero-image{
 
+        width:100%;
+        flex:none;
         margin-left:0;
 
     }
